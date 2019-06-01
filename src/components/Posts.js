@@ -9,7 +9,7 @@ export default class Posts extends Component {
     state = {
         posts: [],
         error: false
-    }
+    };
 
     componentDidMount() {
         this.updatePosts();
@@ -28,7 +28,7 @@ export default class Posts extends Component {
         })
     };
 
-    onError = (err) => {
+    onError = () => {
         this.setState({
             error: true
         })
